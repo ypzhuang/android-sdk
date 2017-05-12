@@ -1,2 +1,6 @@
 = Android SDK on Alpine 
 
+only installed below packages to slim
+* build-tools: 25.0.3
+* platforms;android-25
+
