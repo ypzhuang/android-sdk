@@ -16,7 +16,5 @@ RUN unzip tools.zip && rm tools.zip && \
     chmod a+x -R $ANDROID_HOME && \ 
     mkdir /root/.android/ && touch /root/.android/repositories.cfg
 
-RUN  yes | sdkmanager "build-tools;$BUILD_TOOLS_VERSION" "platforms;android-25" --verbose
+RUN  yes | sdkmanager "build-tools;$BUILD_TOOLS_VERSION" "platforms;android-25"  "platform-tools"  --verbose
  
-
-
